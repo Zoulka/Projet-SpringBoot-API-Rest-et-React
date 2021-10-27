@@ -3,7 +3,7 @@ package com.example.springbootbackend.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Users")
+@Table(name = "users")
 public class User {
 
     @Id
@@ -22,40 +22,48 @@ public class User {
     }
 
     public User(String nom, String prenom, String email) {
-        Nom = nom;
-        Prenom = prenom;
-        Email = email;
+        this.Nom = nom;
+        this.Prenom = prenom;
+        this.Email = email;
     }
 
     public Long getId() {
+
         return id;
     }
 
     public void setId(Long id) {
+
         this.id = id;
     }
 
     public String getNom() {
+
         return Nom;
     }
 
     public void setNom(String nom) {
-        Nom = nom;
+
+        this.Nom = nom;
     }
 
     public String getPrenom() {
+
         return Prenom;
     }
 
     public void setPrenom(String prenom) {
-        Prenom = prenom;
+
+        this.Prenom = prenom;
     }
 
     public String getEmail() {
+
         return Email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+
+        this.Email = email;
     }
 }

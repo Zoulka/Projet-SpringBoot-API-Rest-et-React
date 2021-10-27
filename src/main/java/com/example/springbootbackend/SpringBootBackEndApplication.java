@@ -21,5 +21,7 @@ private UserRepository userRepository;
         this.userRepository.save(new User("Aminata", "Assahalou","aminata@gmail.com"));
         this.userRepository.save(new User("Salihou", "Badiara","salihou@gmail.com"));
         this.userRepository.save(new User("Djibrilla", "Assahalou","djibrilla@gmail.com"));
+        this.userRepository.save(new User("Zoulkiste", "Maiga","salihou@gmail.com"));
+        this.userRepository.save(new User("Hamidou", "Djibrilla","hamidou@yahoo.com"));
     }
 }
